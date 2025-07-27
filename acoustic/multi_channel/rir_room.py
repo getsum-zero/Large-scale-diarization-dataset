@@ -425,7 +425,7 @@ class rir_room:
                 self.SRR_linear.append(self.compute_SRR(audio[i],rir2,self.fs))
 
                 self.DRR_circle.append(self.compute_DRR(rir1,self.fs))
-                self.SRR_linear.append(self.compute_DRR(rir2,self.fs))
+                self.DRR_linear.append(self.compute_DRR(rir2,self.fs))
 
                 if self.array_num == 2:
                     rir3 = self.room.rir[self.mic_num+1][i]
